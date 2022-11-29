@@ -4,7 +4,7 @@
   "description": "this is a project for full stack web dev test",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=dev && node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Vivekyadav-4321/project#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "hbs": "^4.2.0",
     "jsonwebtoken": "^8.5.1",

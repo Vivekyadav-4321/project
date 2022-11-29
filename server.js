@@ -3,6 +3,10 @@ const PORT = process.env.PORT || 3000
 const homepage = require("./views/homepage/server")
 const login = require("./views/login/server")
 const searchpage = require("./views/search/server")
+const bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser')
+app.use(cookieParser())
+
 app.set("view engine", "hbs")
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -12,5 +16,5 @@ app.use("/login",login)
 app.use("/search",searchpage)
 
 app.listen(PORT, ()=>{
-    log(`Server is live ${PORT}`)
+    console.log(`Server is live ${PORT}`)
 })
