@@ -1,0 +1,34 @@
+{
+  "name": "vivekyadav",
+  "version": "1.0.0",
+  "description": "this is a project for full stack web dev test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vivekyadav-4321/project.git"
+  },
+  "keywords": [
+    "tv",
+    "show",
+    "site",
+    "show",
+    "cards"
+  ],
+  "author": "vivek yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vivekyadav-4321/project/issues"
+  },
+  "homepage": "https://github.com/Vivekyadav-4321/project#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "2.0",
+    "npm": "^9.1.2"
+  }
+}
