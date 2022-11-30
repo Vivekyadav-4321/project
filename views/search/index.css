@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
 }
 
+
 .conatiner{
-    background-image: url("https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 600vh;
     background-position: center;
 }
 
@@ -48,14 +51,10 @@ color: white;
 .conatiner{
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .searchbarconatiner{
-    width: 60%;
+    width: 100%;
     display: block;
     text-align: center;
     border: 1px solid;
@@ -66,8 +65,8 @@ color: white;
 .searchbarconatiner input{
     display: block;
     width: 80%;
+    border: 2px solid rgb(182, 182, 182);
     height: 40px;
-    border: none;
     padding-left: 15px;
     border-radius: 15px;
     margin: auto;
@@ -94,13 +93,16 @@ color: white;
 
 #showcardconatiner{
     background-color: white;
-    width: 60%;
+    width: 80%;
     text-align: center;
 }
 
 .card{
     margin-top: 15px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: auto;
     width: 100%;
     background-color: white;
@@ -108,7 +110,41 @@ color: white;
 
 .card img{
     width: 60%;
-    border-radius: 15px;
+    display: block;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 600px){
+    .card img{
+        width: 100%;
+        height: 250px;
+    
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conatiner{
+        height: 600vh;
+    }
+
+    
+#showcardconatiner{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.searchbarconatiner  {
+    width: 100%;
+}
 }

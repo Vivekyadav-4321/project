@@ -6,7 +6,6 @@ router.get("/", (req, res) => {
     var userinfo = jwt.decode(req.cookies.usercookie)
    
     if(userinfo != null || undefined){
-        console.log(userinfo);
         res.render(`${__dirname}/index.hbs`, {
             username: userinfo.username
         })

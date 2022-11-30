@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
 }
 
+
 .conatiner{
-    background-image: url("https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -70,6 +73,8 @@ color: white;
     padding-left: 15px;
     border-radius: 15px;
     margin: auto;
+    background-color: aliceblue;
+    border: 2px solid rgb(208, 208, 208);
     margin-top: 15px;
 }
 
@@ -89,4 +94,11 @@ color: white;
 .formcotainer h1 {
     margin-top: 15px;
     margin-bottom: 20px;
+}
+
+
+@media (min-width: 600px){
+    .formcotainer {
+        width: 100%;
+    }
 }
